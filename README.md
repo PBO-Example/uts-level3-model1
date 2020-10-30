@@ -3,74 +3,40 @@ Baca instruksi yang diberikan dengan baik.
 
 
 ## Kelas Diagram
-![Image of UTS Level 3](http://api.puro.del.ac.id/v1/file/99fb856b148f644be5bd881ef88a9c9d)
->Realisasikan kelas Rumah dan kelas Alamat yang ada pada kelas diagram di atas ke dalam bahasa pemrograman Java. Untuk masing-masing kelas lengkapi dengan konstruktor tanpa parameter, konstruktor dengan parameter, kopi konstruktor, serta setter dan getter. Gunakan template yang disediakan di 
-**src\main\java\uts**.
+![Image of UTS Level 3](http://api.puro.del.ac.id/v1/file/7e4ec673247e1cdf9090657c10b80aef)
+>Update program anda pada level 2 sehingga sesuai dengan  kelas diagram di atas. 
 
->**Anda boleh menggunakan (menyalin) kode program yang sudah anda hasilkan dari level 1**
+>**Silahkan menggunakan (menyalin) kode program yang sudah anda hasilkan dari level 1**
 
->**Perhatikan bahwa, pada level 2 ini, tipe atribut alamat adalah Alamat.**
+>**Perhatikan bahwa, pada level 3 ini, sejumlah atribut diangkat ke kelas Parent.**
 
->**Untuk mendapatkan nilai sempurna pada level ini, konsentrasi menyesuaikan kode program kelas Rumah.java yang anda kerjakan pada level 1 sehingga semua konstruktor dan method dapat menerima atribut alamat yang bertipe Alamat (bukan String).**
+>**Untuk mendapatkan nilai sempurna pada level ini, konsentrasi menyesuaikan kode program kelas Rumah.java dan kelas Alamat.java yang anda kerjakan pada level 2 sehingga mempunyai relasi dengan kelas Bangunan seperti yang ditunjukkan pada kelas diagram di atas.**
 
 ## Rubrik Penilaian 
-1. **[Poin 10]** program dilengkapi dengan konstruktor tanpa parameter yang set data dengan nilai default sebagai berikut:
-alamat="Jl. Rambutan No.1 Kota Besar, Sumatera Utara", 1 tingkat, 2 kamar tidur, 1 kamar mandi, harga sewa setahun 5 juta, dan status rumah belum disewa (false).
+1. **[Poin 30]** test realisasi relasi antara kelas Rumah, Bangunan dan Alamat.
 	
 	
 	> Perintah test: 
 	
 	
-		>gradle test --tests TestRumah.testKonstruktorI
+		>gradle test --tests TestRumah.testInheritance
 
-2. **[Poin 15]** program dilengkapi dengan konstruktor dengan parameter 
-
-	
-	> Perintah test: 
-	
-	
-		>gradle test --tests TestRumah.testKonstruktorII
-
-3. **[Poin 15]** program dilengkapi dengan kopi konstruktor
-	
-	
-	> Perintah test: 
-	
-	
-		> gradle test --tests TestRumah.testKopiKonstruktor
-
-4. **[Poin 20]** Program dilengkapi dengan sekumpulan setter dan getter	
-	
-	> Perintah test: 
-	
-	
-		> gradle test --tests TestRumah.testSetter
-
-5. **[Poin 15]** Program dilengkapi dengan method hitungHargaSewa(). Method ini akan mengembalikan hasil perkalian tahun dengan biaya sewa setahun.	
-	
-	> Perintah test: 
-	
-	
-		> gradle test --tests TestRumah.testHitungHargaSewa
-
-6. **[Poin 15]** Program dilengkapi dengan method menyewa(). Method ini akan mengembalikan suatu pesan.
-> Misalnya data sebuah rumah  r kondisi sudah disewa, harga sewa setahun 6000000 dan method menyewa() dipanggil dengan r.menyewa(6) maka pesan yang tampil adalah: Rumah tidak dapat disewa
-
-> Misalnya data sebuah rumah r dengan kondisi	belum disewa, harga sewa setahun 6000000 dan method menyewa() dipanggil dengan r.menyewa(6) maka pesan yang tampil adalah: Anda bisa menyewa rumah selama 6 bulan dengan membayar 3000000.0
+2. **[Poin 35]** test realisasi method setAlamat() dan getAlamat() dari kelas Bangunan
 
 	
 	> Perintah test: 
 	
 	
-		> gradle test --tests TestRumah.testMenyewa
+		>gradle test --tests TestRumah.testGetSetAlamat
 
-7. **[Poin 10]** program dilengkapi dengan method toString() yang akan menampilkan data di dalam objek Rumah. Perhatikan contoh keluaran yang diberikan.
-![Image of output of toString()](http://api.puro.del.ac.id/v1/file/c4ca00173c907ee8f954fd30a9213412)	
+3. **[Poin 35]** ptest realisasi method setTingkat() dan getTingkat() dari kelas Bangunan
+
 	
 	> Perintah test: 
 	
 	
-		> gradle test --tests TestRumah.testToString
+		>gradle test --tests TestRumah.testGetSetTingkat
+
 
 **Catatan Penting:**
 1. Anda hanya boleh mengubah kode program yang ada di src\main\java
