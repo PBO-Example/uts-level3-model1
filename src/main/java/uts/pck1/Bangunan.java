@@ -1,13 +1,9 @@
 //Bangunan.java
 package uts.pck1;
-public abstract class Bangunan{
+public class Bangunan{
 	//atribut
-	protected Alamat alamat;
-	protected int tingkat;
+	/*deklarasikan atribut di sini*/
 	
-	public abstract void setAlamat(Alamat alamat);
-	public abstract void setTingkat(int tingkat);
-	public abstract Alamat getAlamat();
-	public abstract int getTingkat();
+	/*deklarasikan semua method di sini*/
 	
 }
