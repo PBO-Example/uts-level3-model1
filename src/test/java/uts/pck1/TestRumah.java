@@ -1,6 +1,6 @@
 //TestRumah.java
 package uts.pck1;
-
+import static org.mockito.Mockito.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNotSame;
@@ -13,8 +13,10 @@ import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.Matchers.equalToIgnoringCase;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class TestRumah {
 
+
+public class TestRumah {
+	Bangunan bangn;
 	Rumah rum;
 	Alamat alamat;
 	
@@ -60,6 +62,15 @@ public class TestRumah {
         Arguments.of(new Rumah(new Alamat("Jalan Sutomo",7,"Tarutung"),2,4,2,4000000,false), 6, true, "\nAnda bisa menyewa rumah selama 6 bulan dengan membayar 2000000.0"),
 		Arguments.of(new Rumah(new Alamat("Jl. Patimura",20,"Gunungsitoli"),2,4,2,5000000,true), 5, true,"\nRumah tidak dapat disewa")
     );}
+	
+	@Test
+	public void testInheritance()
+	{ 
+		 rum = new Rumah();
+		 bangn=new Rumah(rum);
+		 assertEquals(rum, bangn);
+	}
+	
 	
 	
 	@Test

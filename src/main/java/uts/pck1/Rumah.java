@@ -1,9 +1,7 @@
 //Rumah.java
 package uts.pck1;
-public class Rumah{
+public class Rumah extends Bangunan{
 	//atribut
-	private Alamat alamat;
-	private int tingkat;
 	private int jmlKamarTidur;
 	private int jmlKamarMandi;
 	private double hargaSewaSetahun;
@@ -11,16 +9,14 @@ public class Rumah{
 	
 	//konstruktor
 	public Rumah(){
-		alamat=new Alamat();
-		tingkat=1;
+		super();
 		jmlKamarTidur=2;
 		jmlKamarMandi=1;
 		hargaSewaSetahun=5000000;
 		statusSewa=false;
 	}
 	public Rumah(Alamat alamat, int tingkat, int jmlKamarTidur, int jmlKamarMandi, double hargaSewaSetahun, boolean statusSewa){
-		this.alamat=new Alamat(alamat);
-		this.tingkat=tingkat;
+		super(alamat,tingkat);
 		this.jmlKamarTidur=jmlKamarTidur;
 		this.jmlKamarMandi=jmlKamarMandi;
 		this.hargaSewaSetahun=hargaSewaSetahun;
@@ -28,8 +24,7 @@ public class Rumah{
 		
 	}
 	public Rumah(Rumah r){
-		alamat=new Alamat(r.alamat);
-		tingkat=r.tingkat;
+		super(r.alamat, r.tingkat);
 		jmlKamarTidur=r.jmlKamarTidur;
 		jmlKamarMandi=r.jmlKamarMandi;
 		hargaSewaSetahun=r.hargaSewaSetahun;
