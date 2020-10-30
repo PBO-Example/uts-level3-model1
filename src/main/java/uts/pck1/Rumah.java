@@ -9,14 +9,16 @@ public class Rumah extends Bangunan{
 	
 	//konstruktor
 	public Rumah(){
-		super();
+		alamat=new Alamat();
+		tingkat=1;
 		jmlKamarTidur=2;
 		jmlKamarMandi=1;
 		hargaSewaSetahun=5000000;
 		statusSewa=false;
 	}
 	public Rumah(Alamat alamat, int tingkat, int jmlKamarTidur, int jmlKamarMandi, double hargaSewaSetahun, boolean statusSewa){
-		super(alamat,tingkat);
+		this.alamat=new Alamat(alamat);
+		this.tingkat=tingkat;
 		this.jmlKamarTidur=jmlKamarTidur;
 		this.jmlKamarMandi=jmlKamarMandi;
 		this.hargaSewaSetahun=hargaSewaSetahun;
@@ -24,7 +26,8 @@ public class Rumah extends Bangunan{
 		
 	}
 	public Rumah(Rumah r){
-		super(r.alamat, r.tingkat);
+		alamat=new Alamat(r.alamat);
+		tingkat=r.tingkat;
 		jmlKamarTidur=r.jmlKamarTidur;
 		jmlKamarMandi=r.jmlKamarMandi;
 		hargaSewaSetahun=r.hargaSewaSetahun;

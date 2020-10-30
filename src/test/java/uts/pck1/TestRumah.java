@@ -70,9 +70,23 @@ public class TestRumah {
 		 bangn=new Rumah(rum);
 		 assertEquals(rum, bangn);
 	}
+	@Test
+	public void testGetSetAlamat() {
+		Bangunan absCls = mock(
+		  Bangunan.class, 
+		  CALLS_REAL_METHODS);
+		absCls.setAlamat(new Alamat("Jalan Sutomo",7,"Tarutung"));
+		  absCls.getAlamat();
+	}
 	
+	@Test
+	public void testGetSetTingkat() {
+		Bangunan absCls = mock(Bangunan.class, CALLS_REAL_METHODS);
+		absCls.setTingkat(10);
+		absCls.getTingkat();
+	}
 	
-	
+		
 	@Test
 	public void testKonstruktorI()
 	{ 
