@@ -6,8 +6,6 @@ Baca instruksi yang diberikan dengan baik.
 ![Image of UTS Level 3](http://api.puro.del.ac.id/v1/file/7e4ec673247e1cdf9090657c10b80aef)
 >Update program anda pada level 2 sehingga sesuai dengan  kelas diagram di atas. 
 
->**Silahkan menggunakan (menyalin) kode program yang sudah anda hasilkan dari level 1**
-
 >**Perhatikan bahwa, pada level 3 ini, sejumlah atribut diangkat ke kelas Parent.**
 
 >**Untuk mendapatkan nilai sempurna pada level ini, konsentrasi menyesuaikan kode program kelas Rumah.java dan kelas Alamat.java yang anda kerjakan pada level 2 sehingga mempunyai relasi dengan kelas Bangunan seperti yang ditunjukkan pada kelas diagram di atas.**
@@ -29,7 +27,7 @@ Baca instruksi yang diberikan dengan baik.
 	
 		>gradle test --tests TestRumah.testGetSetAlamat
 
-3. **[Poin 35]** ptest realisasi method setTingkat() dan getTingkat() dari kelas Bangunan
+3. **[Poin 35]** test realisasi method setTingkat() dan getTingkat() dari kelas Bangunan
 
 	
 	> Perintah test: 
