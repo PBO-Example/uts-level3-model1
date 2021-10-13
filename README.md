@@ -19,7 +19,7 @@ Baca instruksi yang diberikan dengan baik.
 	
 		>gradle test --tests TestRumah.testInheritance
 
-2. **[Poin 35]** test realisasi method setAlamat() dan getAlamat() dari kelas Bangunan
+2. **[Poin 35]** test realisasi method setAlamat() dan getAlamat() pada kelas Rumah
 
 	
 	> Perintah test: 
@@ -27,7 +27,7 @@ Baca instruksi yang diberikan dengan baik.
 	
 		>gradle test --tests TestRumah.testGetSetAlamat
 
-3. **[Poin 35]** test realisasi method setTingkat() dan getTingkat() dari kelas Bangunan
+3. **[Poin 35]** test realisasi method setTingkat() dan getTingkat() pada kelas Rumah
 
 	
 	> Perintah test: 
